@@ -14,7 +14,6 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
-    <Route render={() => <Redirect to={{pathname: "/"}} />} />
       <Route path="/" element={<App />}>
         <Route path="drinklists" element={<DrinkLists />} />
         <Route path="breakfast" element={<Breakfast />} />
