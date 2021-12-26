@@ -12,7 +12,7 @@ const Header = () => {
             </nav>
         </header>
         <Outlet />
-        <h1 className="title-text"><a href="#top">Please select from above options to see the menu</a> </h1>
+        <h1 className="title-text">Please select from above options to see the menu</h1>
         </div>
         
      );
