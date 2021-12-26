@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --bg: #ECEFA4;
+  --sidecolor: #D9DD6B;
+  --desc:#D54C4C;
+  --maincolor: #8D2828;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: var(--bg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-text a{
+  color: black;
+  text-decoration: none;
+}
+
+.main-box {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 3%;
 }
 
-.App-link {
-  color: #61dafb;
+.small-box, .smallbox-new {
+  display: flex;
+  justify-content: space-between;
+  width: calc(30% + 15em);
+  margin: auto;
+  padding: 2% 0;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.small-box p, .smallbox-new p{
+  padding: 1% 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--maincolor);
+  font-weight: bold;
+}
+
+.title-text{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 5%;
+}
+
+.cat-head{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--desc);
+}
+.cat-desc, .desc-2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--maincolor);
+  font-weight: normal !important;
+}
+
+p.child-links {
+  background-color: var(--sidecolor);
+  border: 3px solid var(--desc);
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+  padding: 2%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 5em;
+  align-items: center;
+}
+
+.det-sec{
+  display: flex;
+  flex-direction: column;
+}
+
+.child-links a{
+  color: var(--maincolor);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.type-price {
+  display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:767px) {
+  .title-text{
+    font-size: 24px;
   }
 }
