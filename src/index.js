@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {
+  HashRouter,
   BrowserRouter,
   Routes,
   Route
@@ -12,7 +13,7 @@ import Breakfast from './components/routes/Breakfast';
 import Dinner from './components/routes/Dinner';
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="drinklists" element={<DrinkLists />} />
@@ -21,7 +22,7 @@ ReactDOM.render(
         <Route path="" component={<App />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
