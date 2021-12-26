@@ -18,6 +18,7 @@ ReactDOM.render(
         <Route path="drinklists" element={<DrinkLists />} />
         <Route path="breakfast" element={<Breakfast />} />
         <Route path="dinner" element={<Dinner />} />
+        <Route path="" component={<App />} />
       </Route>
     </Routes>
   </BrowserRouter>
