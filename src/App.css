@@ -28,6 +28,7 @@ body{
 }
 
 .cp-text{ color: black;
+  padding: 5%;
   font-family: 'Poppins';
   font-size: 14px;
    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
