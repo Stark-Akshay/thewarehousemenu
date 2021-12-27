@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import {
   HashRouter,
-  BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";

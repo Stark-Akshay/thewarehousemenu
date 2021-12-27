@@ -13,7 +13,12 @@ const Header = () => {
         </header>
         <Outlet />
         <h1 className="title-text">Please select from above options to see the menu</h1>
+        <div className="jus-center">
+        <p className="cp-text">
+    © Copyright 2021 The Warehouse Café and Restaurant. All rights reserved. Developed by <a href="https://www.linkedin.com/in/akshay-manoj-b97144179/">Akshay Manoj</a></p>
+        
         </div>
+       </div>
         
      );
 }
